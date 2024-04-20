@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTQ Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">QTQ Restaurant</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2 class="title">Welcome to QTQ!</h2>
+            <p class="description">Experience a burst of flavor with our delicious and diverse menu. We offer a variety of dishes to tantalize your taste buds, from classic favorites to innovative creations.</p>
+            <button class="order-btn">Order Now</button>
+        </section>
+
+        <section id="menu">
+            <h2 class="title">Our Menu</h2>
+            <div class="menu-item">
+                <img src="images/dish1.jpg" alt="Dish 1">
+                <h3>Dish 1 Name</h3>
+                <p>Detailed description of Dish 1, including ingredients and flavors.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish2.jpg" alt="Dish 2">
+                <h3>Dish 2 Name</h3>
+                <p>Detailed description of Dish 2, including ingredients and flavors.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish3.jpg" alt="Dish 3">
+                <h3>Dish 3 Name</h3>
+                <p>Detailed description of Dish 3, including ingredients and flavors.</p>
+            </div>
+            </section>
+
+        <section id="contact">
+            <h2 class="title">Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 QTQ Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: linear-gradient(to right, #ff9999, #66b3ff);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #333;
+}
+
+nav a:hover {
+    color: #ff9999;
+}
+
+main {
+    padding: 50px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.description {
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.order-btn {
+    background-color: #ff9999;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
